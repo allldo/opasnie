@@ -35,6 +35,7 @@ const makeCall = () => {
 };
 </script>
 <template>
+    <main>
     <section id="main">
         <h1 v-show="!isMenuOpen ||!isMobile">
             <u v-show="!isMenuOpen ||!isMobile">Детективные</u> услуги 24/7 в Алматы</h1>
@@ -43,6 +44,7 @@ const makeCall = () => {
         <div v-show="!isMenuOpen ||!isMobile" @click="makeCall"><img loading="lazy" :width="imgsize" :height="imgsize" src="/phone.webp" alt="phone number"> <p>+7 (707) 849 04 45</p></div>
         <div v-show="!isMenuOpen ||!isMobile" @click="goToWhatsApp"><img loading="lazy" :width="imgsize2" :height="imgsize2" src="/whatsapp.webp" alt="whatsapp"> <p>+7 (706) 847 82 27</p></div>
     </section>
+</main>
 </template>
 <style scoped>
 div{

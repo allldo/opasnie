@@ -6,7 +6,7 @@
   color: #FFFFFF;
   text-decoration: none;
 }
-section{
+section, nav{
   padding: 0 165px;
 }
 u{
@@ -21,17 +21,17 @@ a{
 
 @media  (min-width: 1200px) and (max-width: 1900px) {
   
-section{
+section, nav{
   padding: 0 124px;
 }
 }
 @media  (min-width: 650px) and (max-width: 1199px) {
-  section{
+  section, nav{
     padding: 0 32px;
   }
 }
 @media  (max-width: 649px) {
-  section{
+  section, nav{
     padding: 0 28px;
   }
 }

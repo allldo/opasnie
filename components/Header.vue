@@ -60,7 +60,8 @@ onUnmounted(() => {
 });
 </script>
 <template>
-    <section v-show="!isMenuOpen" id="mobile" v-if="isMobile">
+    <header>
+    <nav v-show="!isMenuOpen" id="mobile" v-if="isMobile">
         <img width="278px" height="49px" loading="lazy" id="img2" src="/logo.webp" alt="logo">
         <div>
             <button @click="openMenu" aria-label="Burger_button">
@@ -69,9 +70,9 @@ onUnmounted(() => {
                 <span></span>
             </button>
         </div>
-    </section>
+    </nav>
     <button v-show="isMenuOpen && isMobile" id="close" @click="closeMenu"></button>
-    <section v-show="isMenuOpen" id="desctop">
+    <nav v-show="isMenuOpen" id="desctop">
         <img width="278px" height="49px" loading="lazy" src="/logo.webp" alt="logo">
         <span v-if="isMobile" class="line"></span>
         <div>
@@ -82,7 +83,8 @@ onUnmounted(() => {
             <span v-if="isMobile" class="line"></span>
             <a class="header_button" href="https://wa.me/+77068478227" target="_blank">СВЯЗАТЬСЯ С НАМИ</a>
         </div>
-    </section>
+    </nav>
+</header>
 </template>
 <style scoped>
 .line{
@@ -133,7 +135,7 @@ button>span{
     height: 1px;
     margin-bottom: 5px;
 }
-section{
+nav{
     position: absolute;
     top: 30px;
     left: 0;
@@ -142,7 +144,7 @@ section{
     justify-content: space-between;
     width: 100%;
 }
-div{
+div, header{
     display: flex;
     align-items: center;
 }
@@ -178,7 +180,7 @@ p:hover{
     background: #FF0606;
 }
 @media  (min-width: 1200px) and (max-width: 1850px) {
-    section{
+    nav{
         top: 23px;
     }
     p{
@@ -217,7 +219,7 @@ p:hover{
         width: 175px;
         height: 31px;
     }
-    section{
+    nav{
         top: 24px;
     }
     #desctop{

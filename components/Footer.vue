@@ -32,6 +32,7 @@ const scrollTo = (index) => {
 
 </script>
 <template>
+    <footer>
     <section>
         <div>
             <img loading="lazy" src="/logo.webp" alt="logo">
@@ -48,7 +49,7 @@ const scrollTo = (index) => {
                 </div>
                 <div>
                     <p class="bold">Контакты:</p>
-                    <p>​Микрорайон Казахфильм, 19Б​1 этаж</p>
+                    <address>​Микрорайон Казахфильм, 19Б​1 этаж</address>
                     <p>+7 (707) 849 04 45</p>
                     <p>+7 (706) 847 82 27</p>
                 </div>
@@ -56,6 +57,7 @@ const scrollTo = (index) => {
             <p>© 2025 ОпасныеСвязи. Все права защищены</p>
         </div>
     </section>
+    </footer>
 </template>
 <style scoped>
 img{
@@ -68,7 +70,7 @@ a{
     font-weight: 500;
     line-height: 19.5px;
 }
-p{
+p, address{
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
@@ -102,12 +104,13 @@ section>div>div>div{
 section>div>div>div>a{
     margin-bottom: 21px;
 }
-section>div>div>div>p{
+section>div>div>div>p, address{
     margin-bottom: 21px;
 }
 .bold{
     font-weight: 700;
 }
+
 @media  (min-width: 1200px) and (max-width: 1850px) {
     img{
         width: 209px;
@@ -118,7 +121,7 @@ section>div>div>div>p{
         font-size: 12px;
         line-height: 15px;
     }
-    p{
+    p, address{
         font-size: 11px;
         line-height: 13px;
     }
@@ -138,7 +141,7 @@ section>div>div>div>p{
         margin-right: 135px;
     }
 
-    section>div>div>div>a{
+    section>div>div>div>a, address{
         margin-bottom: 16px;
     }
     section>div>div>div>p{
@@ -154,7 +157,7 @@ section>div>div>div>p{
         font-weight: 500;
         line-height: 14.63px;
     }
-    p{
+    p, address{
         font-size: 12px;
         font-weight: 500;
         line-height: 14.63px;
@@ -162,7 +165,7 @@ section>div>div>div>p{
     section>div>div>div>a{
         margin-bottom: 14px;
     }
-    section>div>div>div>p{
+    section>div>div>div>p, address{
         margin-bottom: 14px;
     }
     section>div>div{
@@ -189,7 +192,8 @@ section>div>div>div>p{
         font-weight: 500;
         line-height: 14.63px;
     }
-    p{
+    
+    p, address{
         font-size: 12px;
         font-weight: 500;
         line-height: 14.63px;
@@ -207,7 +211,7 @@ section>div>div>div>p{
     section>div>div>div>a{
         margin-bottom: 14px;
     }
-    section>div>div>div>p{
+    section>div>div>div>p, address{
         margin-bottom: 14px;
     }
     img{
