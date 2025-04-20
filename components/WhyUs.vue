@@ -8,21 +8,17 @@
             <div id="like">
                 <img width="167px" height="121px" src="/like.webp" loading="lazy" alt="like">
                 <p class="main_title">Гарантия</p>
-                <p>Мы гарантируем качество и надежный результат во время работы.</p>
+                <p>Мы предоставляем детективные услуги с гарантией качества.</p>
             </div>
             <div id="security">
                 <img width="192px" height="138px" src="/security.webp" loading="lazy" alt="security">
                 <p class="main_title">Конфиденциальность</p>
-                <p>Ваши данные под полной
-                    защитой, строгое соблюдение
-                    конфиденциальности.</p>
+                <p>Все наши услуги выполняются с полным соблюдением конфиденциальности.</p>
             </div>
             <div id="society">
                 <img width="175px" height="126px" src="/society.webp" loading="lazy" alt="society">
                 <p class="main_title">Наши связи</p>
-                <p>Мы имеем обширные
-                    контакты, что ускоряет
-                    решение ваших вопросов.</p>
+                <p>Мы имеем обширные контакты, что ускоряет решение ваших вопросов.</p>
             </div>
         </div>
         <a class="button" href="https://wa.me/+77068478227" target="_blank">СВЯЗАТЬСЯ С НАМИ</a>
